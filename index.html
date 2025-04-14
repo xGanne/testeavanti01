@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanti</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Link Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <div class="top-banner">
+            <p>Ganhe <strong>R$10,00</strong> de desconto no seu primeiro pedido. Utilize o cupom <strong>DESCONTO10</strong></p>
+        </div>
+
+        <header class="site-header">
+            <div class="container header-container">
+                <div class="header-top">
+                    <button class="mobile-menu-toggle" aria-label="Abrir Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <a href="/" class="logo">
+                        <img src="images/logo-avanti.png" alt="Avanti Logo">
+                    </a>
+
+                    <div class="search-container">
+                        <form class="search-form" id="search-form">
+                            <input type="search" id="search-input" placeholder="Digite aqui o que você procura">
+                            <button type="submit" aria-label="Buscar">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                        <div id="search-result-display" class="search-result-display"></div>
+                    </div>
+
+                    <div class="user-actions">
+                        <a href="#" class="user-account">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Olá,<br>Nome cliente!</span>
+                        </a>
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="nav-links">
+                    <li class="nav-item has-dropdown all-categories">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-bars"></i> Todas as Categorias
+                        </a>
+                        <div class="mega-menu">
+                           <div class="department-list">
+                                <a href="#" class="department-item-link">
+                                    <span>Departamento</span>
+                                    <span class="arrow">></span>
+                                </a>
+                                <a href="#" class="department-item-link">
+                                    <span>Departamento</span>
+                                    <span class="arrow">></span>
+                                </a>
+                                <a href="#" class="department-item-link">
+                                    <span>Departamento</span>
+                                    <span class="arrow">></span>
+                                </a>
+                                <a href="#" class="department-item-link">
+                                    <span>Departamento</span>
+                                    <span class="arrow">></span>
+                                </a>
+                                <a href="#" class="department-item-link">
+                                    <span>Departamento</span>
+                                    <span class="arrow">></span>
+                                </a>
+                                <a href="#" class="department-item-link">
+                                    <span>Departamento</span>
+                                    <span class="arrow">></span>
+                                </a>
+                                 <a href="#" class="department-item-link">
+                                    <span>Departamento</span>
+                                    <span class="arrow">></span>
+                                </a>
+                                 <a href="#" class="department-item-link">
+                                    <span>Departamento</span>
+                                    <span class="arrow">></span>
+                                </a>
+                            </div>
+                               <div class="category-columns">
+                                   <div class="category-column">
+                                       <h4>Categoria</h4>
+                                       <a href="#">Categoria</a>
+                                       <a href="#">Categoria</a>
+                                       <a href="#">Categoria</a>
+                                       <a href="#">Categoria</a>
+                                       <a href="#">Categoria</a>
+                                       <a href="#">Categoria</a>
+                                       <a href="#">Categoria</a>
+                                   </div>
+                                   <div class="category-column">
+                                        <h4>Categoria</h4>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                    <div class="category-column">
+                                        <h4>Categoria</h4>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                               </div>
+                               <div class="menu-promo">
+                                <img src="images/items/mug2.png" alt="Promoção Caneca">
+                                <h3>Confira os Produtos Que acabaram de chegar</h3>
+                                <a href="#" class="btn btn-promo">Ver todos</a>
+                           </div>
+                            </div>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link">Departamento</a>
+                            <div class="dropdown-menu">
+                                <h4>Departamento</h4>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                                <a href="#">Categoria</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Departamento</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Departamento</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Departamento</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Departamento</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Departamento</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Departamento</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section class="hero">
+             <div class="hero-content">
+                <h1>SUPERSALE</h1>
+                <h2>ITENS SELECIONADOS COM ATÉ</h2>
+                <p class="discount">50% OFF</p>
+             </div>
+             <div class="hero-image">
+                 <img src="images/items/chair.png" alt="Roupas dobradas em uma cadeira">
+             </div>
+        </section>
+
+        <section class="product-carousel-section lancamentos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lançamentos</h2>
+                    <a href="#" class="view-more">Ver mais</a>
+                </div>
+                <div class="swiper product-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 1">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                               <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 2">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 3">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 4">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 5">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 6">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section content-section-1">
+            <div class="container content-grid">
+                 <div class="content-image">
+                    <img src="images/items/mug.png" alt="Caneca Avanti">
+                 </div>
+                 <div class="content-text">
+                    <h2>LOREM IPSUM</h2>
+                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                 </div>
+            </div>
+        </section>
+
+        <section class="content-section content-section-2">
+             <div class="container content-grid reverse">
+                 <div class="content-text">
+                     <h2>LOREM IPSUM</h2>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-location-dot location-icon"></i> <!-- Ícone de Localização -->
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+                     <div class="feature-item">
+                        <i class="fa-solid fa-location-dot location-icon"></i> <!-- Ícone de Localização -->
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+                     <div class="feature-item">
+                        <i class="fa-solid fa-location-dot location-icon"></i> <!-- Ícone de Localização -->
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    </div>
+                 </div>
+                 <div class="content-image">
+                     <img src="images/items/mug2.png" alt="Caneca Avanti em ambiente">
+                 </div>
+             </div>
+        </section>
+
+        <section class="content-section content-section-1">
+            <div class="container content-grid">
+                 <div class="content-image">
+                    <img src="images/items/mug.png" alt="Caneca Avanti">
+                 </div>
+                 <div class="content-text">
+                    <h2>LOREM IPSUM</h2>
+                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                 </div>
+            </div>
+        </section>
+
+        <section class="product-carousel-section lancamentos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lançamentos</h2>
+                    <a href="#" class="view-more">Ver mais</a>
+                </div>
+                <div class="swiper product-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 1">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                               <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 2">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 3">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 4">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 5">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="product-card">
+                                <span class="tag-novo">NOVO</span>
+                                <img src="images/items/shirt.png" alt="Produto Lançamento 6">
+                                <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+                                <p class="price-old">R$ 100,00</p>
+                                <p class="price-new">R$ 79,90</p>
+                                <span class="tag-off">10% OFF</span>
+                                <p class="installments">Ou em até 10x de R$ 7,90</p>
+                                <button class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-banner">
+             <div class="container">
+                 <h2>Entre em contato conosco e verifique a disponibilidade para sua região!</h2>
+            </div>
+        </section>
+
+        <div class="blank">
+            <h2> </h2>
+        </div>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <h2>Cadastre-se na nossa <strong>newsletter</strong></h2>
+                <form class="newsletter-form">
+                    <input type="text" placeholder="Digite seu nome">
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <label class="checkbox-label">
+                        <input type="checkbox" required> Estou de acordo com a <a href="#">Política de Privacidade</a>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                 <div class="footer-logo-social">
+                     <a href="/" class="footer-logo">
+                        <img src="images/logo-avanti.png" alt="Avanti Logo">
+                    </a>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><img src="images/footer/instagram.png" alt="Instagram"></a>
+                        <a href="#" aria-label="Facebook"><img src="images/footer/facebook.png" alt="Facebook"></a>
+                        <a href="#" aria-label="Youtube"><img src="images/footer/youtube.png" alt="Youtube"></a>
+                        <a href="#" aria-label="TikTok"><img src="images/footer/tiktok.png" alt="TikTok"></a>
+                    </div>
+                 </div>
+
+                 <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Nossas Lojas</a></li>
+                        <li><a href="#">Privacidade e Segurança</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                 </div>
+
+                <div class="footer-links">
+                    <h4>Central de ajuda</h4>
+                    <ul>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Frete e Entrega</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Formas de Pagamento</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                     <h4>Atendimento</h4>
+                     <ul>
+                        <li>Telefone: (00) 1234-5678</li>
+                        <li>E-mail: example@example.com.br</li>
+                        <li>Horário de atendimento:</li>
+                        <li>Segunda a Sábado: 07h00 às 21h00</li>
+                        <li>Domingos e Feriados: 07h00 às 21h00</li>
+                     </ul>
+                 </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="payment-icons">
+                    <img src="images/payments/amex.png" alt="American Express">
+                    <img src="images/payments/mastercard.png" alt="Mastercard">
+                    <img src="images/payments/visa.png" alt="Visa">
+                    <img src="images/payments/hipercard.png" alt="Hipercard">
+                    <img src="images/payments/elo.png" alt="Elo">
+                    <img src="images/payments/diners.png" alt="Diners Club">
+                    <img src="images/payments/paypal.png" alt="Paypal">
+                    <img src="images/payments/pix.png" alt="Pix">
+                    <img src="images/payments/boleto.png" alt="Boleto">
+                 </div>
+                 <p class="copyright">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                 <div class="footer-credits">
+                     <img src="images/footer/.png" alt="Let's Encrypt">
+                     <img src="images/footer/vtex-pci.png" alt="VTEX PCI Certified">
+                     <img src="images/footer/avanti-small.png" alt="Avanti">
+                     <img src="images/footer/vtex.png" alt="Vtex">
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
